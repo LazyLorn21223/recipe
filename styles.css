@@ -1,4 +1,5 @@
 @import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+
 html, body {
     min-height: 100%;
     height: 100%;
@@ -279,100 +280,6 @@ footer {
 #ig {
     transform: translateX(-5px);
 }
-
-
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-    nav {
-        min-width: 768px;
-    }
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(7, 109px);
-        grid-template-areas: "left left left left right right right";
-        grid-auto-rows: auto;
-    }
-    .logo {
-        grid-area: left;
-    }
-    .avatar {
-        grid-area: right;
-        transform: translateX(30px);
-    }
-    .search {
-        position: absolute;
-        z-index: 19;
-        top: 20px;
-        left: 450px;
-    }
-    .street-tacos {
-        height: fit-content;
-        flex-direction: column;
-    }
-    .street-tacos-png {
-        width: 100%;
-    }
-    .tacos-icons {
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-color: rgba(255,255,255,.75);
-        width: 100%;
-        height: 80px;
-        position: absolute;
-    }
-    .tacos-icons span {
-        width: 100%;
-    }
-    .tacos-icons div span {
-        transform: translateX(5px);
-    }
-    header {
-        padding-top: 205px;
-    }
-    header h2 {
-        text-align: left;
-        margin-left: 10px;
-    }
-    .details {
-        flex-direction: column;
-        align-items: center;
-        color: revert;
-        background-color: revert;
-        margin-bottom: 10px;
-    }
-    .details div:first-of-type, .details div:last-of-type {
-        margin: 0;
-    }
-    .details div {
-        height: 20px;
-    }
-    .details b::after {
-        content: "";
-    }
-    .sides-flex{
-        flex-wrap: wrap;
-    }
-    .sides-flex img {
-        height: 100px;
-    }
-    .sides-flex> div {
-        display: flex;
-        width: 50%;
-    }
-    .description-flex * {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 20px;
-        margin-left: 5px;
-    }
-    .copyright {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media only screen and (max-width: 414px) {
     .container {
         max-width: 414px;
@@ -492,10 +399,99 @@ footer {
     .social-icons {
         padding: 0;
     }
-    .social-media {
-        order: 1;
-    }
     footer {
         flex-direction: column;
     }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    nav {
+        min-width: 768px;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(7, 109px);
+        grid-template-areas: "left left left left right right right";
+        grid-auto-rows: auto;
+    }
+    .logo {
+        grid-area: left;
+    }
+    .avatar {
+        grid-area: right;
+        transform: translateX(30px);
+    }
+    .search {
+        position: absolute;
+        z-index: 19;
+        top: 20px;
+        left: 450px;
+    }
+    .street-tacos {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .street-tacos-png {
+        width: 100%;
+    }
+    .tacos-icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(255,255,255,.75);
+        width: 100%;
+        height: 80px;
+        position: absolute;
+    }
+    .tacos-icons span {
+        width: 100%;
+    }
+    .tacos-icons div span {
+        transform: translateX(5px);
+    }
+    header {
+        padding-top: 205px;
+    }
+    header h2 {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .details {
+        flex-direction: column;
+        align-items: center;
+        color: revert;
+        background-color: revert;
+        margin-bottom: 10px;
+    }
+    .details div:first-of-type, .details div:last-of-type {
+        margin: 0;
+    }
+    .details div {
+        height: 20px;
+    }
+    .details b::after {
+        content: "";
+    }
+    .sides-flex{
+        flex-wrap: wrap;
+    }
+    .sides-flex img {
+        height: 100px;
+    }
+    .sides-flex> div {
+        display: flex;
+        width: 50%;
+    }
+    .description-flex * {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 }
