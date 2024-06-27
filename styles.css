@@ -1,0 +1,501 @@
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+html, body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(122, 191, 191, .5);
+}
+* {
+    transition: all .5s ease-out;
+}
+h1, h2, h3, nav a, .tacos-icons span, footer, nav li {
+    font-family: 'Bebas Neue', cursive;
+}
+h3 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 35px;
+    margin: 0;
+}
+p, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    height: fit-content;
+    max-width: 1280px;
+}
+
+.header h2 {
+    text-align: center;
+}
+header {
+    padding-top: 165px;
+    text-align: center;
+    padding-bottom: 10px;   
+}
+
+.checked {
+    color: #EB5428;
+}
+.nav-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav {
+    position: fixed;
+    top: 0;
+    min-width: 1280px;
+    border-bottom: 1px black;
+    box-shadow: 0px 4px 5px -3px #888;
+    background-color: white;
+    z-index: 2;
+}
+.nav-icons li:hover {
+    background-color: #7ABFBF;
+}
+nav a, nav a img {
+    width: 50px;
+    height: 50px;
+}
+nav ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 100px 100px 100px 100px 100px 1fr;
+}
+nav ul li {
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+nav ul li:first-child {
+    display: block;
+    position: static;
+}
+nav ul li p {
+    position: relative;
+    bottom: 10px;
+    color: #EB5428;
+}
+nav ul li:first-of-type img {
+    height: 100%;
+    width: 100px;
+}
+nav ul li:last-of-type img {
+    width: 35px;
+    height: 35px;
+    float: right;
+    transform: translate(-8px, 30px);
+} 
+nav ul li:last-of-type a {
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+}
+.avatar {
+    stroke: #EB5428;
+    fill: #EB5428;
+}
+.logo {
+    stroke: #EB5428;
+    fill: #EB5428;
+}
+.social-icons {
+    list-style: none;
+}
+.sign-in {
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 98px;
+    font-size: 12px;
+    color: black;
+}
+    
+#label-dropdown, #input-dropdown {
+    display: none;
+}
+.search {
+    z-index: 1;
+    position: absolute;
+    top: 120px;
+    left: 43%;
+}
+#search-input {
+    border-color: #EB5428;
+    padding: 5px;
+}
+.icon-tabler-search {
+    transform: translate(-5px, 10px);
+    background-color: #EB5428;
+    height: 25px;
+    padding: 2px;
+}
+.street-tacos {
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+
+.tacos-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #EB5428;
+    width: 300px;
+    height: 100%;
+    
+}
+.tacos-icons a {
+    color: #EB5428;
+    text-decoration: none;
+}
+.tacos-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.street-tacos-description {
+    margin-left: 10px;
+    line-height: 30px;
+}
+.st img {
+    width: 300px;
+    height: 400px;
+}
+.details {
+    text-align: center;
+    color: #7ABFBF;
+    background-color: #0D0D0D;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.details h2 {
+    width: 100%;
+}
+.details b::after {
+    content: "\a";
+}
+.details div:first-of-type {
+    margin-left: 40px;
+}
+.details div:last-of-type {
+    margin-right: 40px;
+}
+.ingredients-directions {
+    display: flex;
+}
+.ingredients {
+    line-height: 25px;
+}
+.ingredients ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.ingredients h3 {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.directions h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.directions {
+    margin-left: 15px;
+}
+.directions li {
+    margin-top: 40px;
+}
+.directions li:first-of-type {
+    margin: 0;
+}
+.sides-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.side-dishes h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+.side-dishes {
+    background-color: #7ABFBF;
+}
+.sides-flex div {
+    margin-bottom: 15px;
+}
+footer {
+    display: flex;
+    padding: 30px 0;
+}
+.social-media {
+    flex-grow: 2;
+    order: 2;
+}
+.copyright {
+    display: flex;
+    flex-grow: 1;
+    order: 1;
+}
+.copyright img {
+    order: 1;
+    height: 200px;
+}
+.copyright h4:first-of-type {
+    order: 2;
+}
+.copyright h4:last-of-type{
+    order: 3;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icons p {
+    padding: 0;
+    margin: 0;
+    right: 2px;
+    position: relative;
+    color: #EB5428;
+    text-transform: uppercase;
+}
+#tt {
+    transform: translateX(5px);
+}
+#ig {
+    transform: translateX(-5px);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    nav {
+        min-width: 768px;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(7, 109px);
+        grid-template-areas: "left left left left right right right";
+        grid-auto-rows: auto;
+    }
+    .logo {
+        grid-area: left;
+    }
+    .avatar {
+        grid-area: right;
+        transform: translateX(30px);
+    }
+    .search {
+        position: absolute;
+        z-index: 19;
+        top: 20px;
+        left: 450px;
+    }
+    .street-tacos {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .street-tacos-png {
+        width: 100%;
+    }
+    .tacos-icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgba(255,255,255,.75);
+        width: 100%;
+        height: 80px;
+        position: absolute;
+    }
+    .tacos-icons span {
+        width: 100%;
+    }
+    .tacos-icons div span {
+        transform: translateX(5px);
+    }
+    header {
+        padding-top: 205px;
+    }
+    header h2 {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .details {
+        flex-direction: column;
+        align-items: center;
+        color: revert;
+        background-color: revert;
+        margin-bottom: 10px;
+    }
+    .details div:first-of-type, .details div:last-of-type {
+        margin: 0;
+    }
+    .details div {
+        height: 20px;
+    }
+    .details b::after {
+        content: "";
+    }
+    .sides-flex{
+        flex-wrap: wrap;
+    }
+    .sides-flex img {
+        height: 100px;
+    }
+    .sides-flex> div {
+        display: flex;
+        width: 50%;
+    }
+    .description-flex * {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .container {
+        max-width: 414px;
+    }
+    nav {
+        min-width: 414px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-icons img {
+        display: none;
+    }
+    .tacos-icons div span {
+        transform: translateX(5px);
+    } 
+    .logo img, .avatar img {
+        display: revert;
+    }
+    .avatar {
+        position: absolute;
+        top: 0;
+        right: 150px;
+    }
+    .avatar p::after {
+        content: '/up';
+    }
+    #logo {
+        position: absolute;
+        top: 0;
+        left: 110px;
+        width: fit-content;
+    }
+    #logo img {
+        width: 200px;
+        height: 80px;
+    }
+    .nav-icons {
+        margin-top: 100px;
+    }
+    .nav-icons li:not(.avatar) {
+        text-align: center;
+        display: block;
+    }
+
+    #input-dropdown ~ ul {
+        overflow: hidden;
+        max-height: 0px;
+    }
+    #input-dropdown:checked ~ ul {
+        max-height: 500px;
+    }
+    #label-dropdown, #input-dropdown {
+        display: revert;
+        position: absolute;
+        top: 10px;
+        left: 35px;
+    }
+    #label-dropdown::after {
+        content: 'menu';
+        position: relative;
+        right: 47px;
+        top: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #input-dropdown {
+        opacity: 0;
+        position: relative;
+        top: 23px;
+        left: 45px;
+        transform: scale(3);
+        cursor: pointer;
+    }
+    .details b::after {
+        content: "";
+    }
+    .search {
+        z-index: 0;
+        position: absolute;
+        top: 130px;
+        left: 100px;
+    }
+    header h2 {
+        text-align: center;
+    }
+    .tacos-icons {
+        position: revert;
+    }
+    .st img {
+        width: 414px;
+    }
+    .details {
+        align-items: flex-start;
+    }
+    .details div {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .ingredients-directions {
+        flex-direction: column;
+    }
+    .directions ol {
+        margin-right: 20px;
+    }
+    .ingredients h3 {
+        text-align: center;
+    }
+    .sides-flex{
+        flex-direction: column;
+    }
+    .sides-flex div {
+        width: 100%;
+    }
+    .social-icons {
+        padding: 0;
+    }
+    .social-media {
+        order: 1;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
